@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+// then press Enter. You can now see whitespace characters in your code.
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Введите первое число:");
+        double firstNumber = in.nextDouble();
+
+        System.out.println("\nВведите второе число:");
+        double secondNumber = in.nextDouble();
+
+        System.out.println("\nВведите операцию (+,-,/,*):");
+        char sing = in.next().charAt(0);
+        double result;
+
+        switch (sing) {
+            case'+':
+                result = firstNumber + secondNumber;
+                break;
+            case'-':
+                result = firstNumber - secondNumber;
+                break;
+            case'/':
+                result = firstNumber / secondNumber;
+                break;
+            case'*':
+                 result = firstNumber * secondNumber;
+             break;
+            default:
+                System.out.println("Неверная операция!");
+                return;
+        }
+
+                System.out.println(" \nРезультат:"+ firstNumber + " " + sing + " " + secondNumber + " = " + result);
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
